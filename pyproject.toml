@@ -1,5 +1,5 @@
 [project]
-name = "template"
+name = "hydra-wandb"
 version = "0.1.0"
 description = "Add your description here"
 authors = [
@@ -14,6 +14,8 @@ dependencies = [
     "pytz>=2025.2",
     "tqdm>=4.67.1",
     "multiprocess>=0.70.18",
+    "wandb>=0.21.3",
+    "numpy>=2.3.2",
 ]
 
 

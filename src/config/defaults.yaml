@@ -1,0 +1,7 @@
+defaults:
+  - _self_
+  - wandb: wandb
+  - train: train
+
+
+seed: 42

@@ -1,0 +1,21 @@
+program: src/main.py
+method: bayes
+metric:
+  goal: minimize
+  name: train/loss
+
+parameters:
+  train.lr:
+    distribution: log_uniform_values
+    min: 0.0001
+    max: 0.01
+  train.batch_size:
+    values: [64]
+  train.epochs:
+    values: [10]
+
+
+command:
+  - python
+  - ${program}
+  - ${args_no_hyphens}
